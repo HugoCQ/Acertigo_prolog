@@ -5,3 +5,10 @@ frasco(verde).
 frasco(anaranjado).
 frasco(violeta).
 frasco(rojo).
+frasco_venenoso_otro_no(violeta,azul).
+frasco_venenoso_otro_no(rojo,amarillo).
+frasco_venenoso_otro_no(azul,anaranjado).
+
+uno_sin_veneno(violeta,amarillo).
+uno_sin_veneno(rojo,anaranjado).
+uno_sin_veneno(verde,azul).
