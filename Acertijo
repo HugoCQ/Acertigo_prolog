@@ -5,6 +5,7 @@ frasco(verde).
 frasco(anaranjado).
 frasco(violeta).
 frasco(rojo).
+
 frasco_venenoso_otro_no(violeta,azul).
 frasco_venenoso_otro_no(rojo,amarillo).
 frasco_venenoso_otro_no(azul,anaranjado).
@@ -12,3 +13,9 @@ frasco_venenoso_otro_no(azul,anaranjado).
 uno_sin_veneno(violeta,amarillo).
 uno_sin_veneno(rojo,anaranjado).
 uno_sin_veneno(verde,azul).
+
+
+%reglas
+venenoso(V):-(frasco_venenoso_otro_no(V,N);frasco_venenoso_otro_no(N,V)),no_venenoso(N).
+no_venenoso(N):-(uno_sin_veneno(N,V);uno_sin_veneno(V,N)),venenoso(V).
+no_venenoso(rojo).
