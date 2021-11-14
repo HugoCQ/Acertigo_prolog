@@ -19,3 +19,6 @@ uno_sin_veneno(verde,azul).
 venenoso(V):-(frasco_venenoso_otro_no(V,N);frasco_venenoso_otro_no(N,V)),no_venenoso(N).
 no_venenoso(N):-(uno_sin_veneno(N,V);uno_sin_veneno(V,N)),venenoso(V).
 no_venenoso(rojo).
+
+/*Integrantes: Fidel Cartes
+               Hugo Concha*/
